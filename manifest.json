@@ -1,0 +1,16 @@
+{
+   "content_scripts": [ {
+      "exclude_globs": [ "https://dreamevent.my.salesforce.com/*" ],
+      "exclude_matches": [  ],
+      "include_globs": [ "https://*.salesforce.com/*", "https://c.*.force.com/*" ],
+      "js": [ "script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "converted_from_user_script": true,
+   "description": "Adds links for commonly used DEVELOPER Setup items to the 'User Menu' (the menu under your name on the Salesforce page).",
+   "key": "3QkX1JPS4yedEGJ7j0FjBxpwsAq2w/INFTpiy9Aw5uU=",
+   "name": "Salesforce User Menu Enhancement - Developer Version",
+   "version": "1.0",
+   "manifest_version": 2
+}
