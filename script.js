@@ -55,7 +55,7 @@ unsafeWindow.addEventListener("load", function() {
 							['Apex Test Execution', '/ui/setup/apex/ApexTestQueuePage?setupid=ApexTestQueue'],
 							['Custom Settings', '/setup/ui/listCustomSettings.apexp?setupid=CustomSettings']
 						],
-						customListUrls: ['_CustomFieldRelatedList_target', '#LayoutList_target', '#CustomResourceLinkList$RelatedIntegrationLinksList_target'],
+						customListUrls: ['_CustomFieldRelatedList_target', '#LayoutList_target', '#ActionButtonLinkList$ActionsList_target'],
 						// #01IE00000008vop_CustomFieldRelatedList_target
 						itemNames: ['Fields', 'Page Layouts', 'Buttons and Links'],
 						buttonsUrl: '/p/setup/link/ActionButtonLinkList',
