@@ -58,7 +58,7 @@ unsafeWindow.addEventListener("load", function() {
 						customListUrls: ['_CustomFieldRelatedList_target', '#LayoutList_target', '#CustomResourceLinkList$RelatedIntegrationLinksList_target'],
 						// #01IE00000008vop_CustomFieldRelatedList_target
 						itemNames: ['Fields', 'Page Layouts', 'Buttons and Links'],
-						buttonsUrl: '/p/setup/link/CustomResourceLinkList',
+						buttonsUrl: '/p/setup/link/ActionButtonLinkList',
 						fieldListUrl: '/p/setup/layout/LayoutFieldList',
 						pageLayoutUrl: '/ui/setup/layout/PageLayouts',
 						standardObjFields: ['Account', 'BRC', 'Case', 'Contact', 'Lead', 'Opportunity', 'Property', 'Quote'],
