@@ -50,10 +50,12 @@ unsafeWindow.addEventListener("load", function() {
 						newMenuOptions: [
 							//['Advanced User Settings', '?noredirect=1'],
 							['Apex Classes', '/01p?setupid=ApexClasses'],
-							['VisualForce Pages', '/apexpages/setup/listApexPage.apexp?setupid=ApexPages'],
-							['Custom Objects', '/p/setup/custent/CustomObjectsPage?setupid=CustomObjects'],
+							['Apex Jobs', '/apexpages/setup/listAsyncApexJobs.apexp'],
 							['Apex Test Execution', '/ui/setup/apex/ApexTestQueuePage?setupid=ApexTestQueue'],
-							['Custom Settings', '/setup/ui/listCustomSettings.apexp?setupid=CustomSettings']
+							['Custom Objects', '/p/setup/custent/CustomObjectsPage?setupid=CustomObjects'],
+							['Custom Settings', '/setup/ui/listCustomSettings.apexp?setupid=CustomSettings'],
+							['Debug Logs', '/setup/ui/listApexTraces.apexp'],
+							['VisualForce Pages', '/apexpages/setup/listApexPage.apexp?setupid=ApexPages']
 						],
 						customListUrls: ['_CustomFieldRelatedList_target', '#LayoutList_target', '#ActionButtonLinkList$ActionsList_target'],
 						// #01IE00000008vop_CustomFieldRelatedList_target
@@ -74,6 +76,8 @@ unsafeWindow.addEventListener("load", function() {
 							['Static Resources', '/apexpages/setup/listStaticResource.apexp?setupid=StaticResources']
 						]
 					},
+					// the following options are specific to our Org
+					// you should substitute your specific Id prefixes for these
 					objectListOptions = [
 						['-- Choose a List --', ''],
 						['Assets', '/02i'],
@@ -83,7 +87,11 @@ unsafeWindow.addEventListener("load", function() {
 						['Products', '/01t/o'],
 						['Product Definitions', '/a32/o'],
 						['RateCards', '/a16'],
-						['RateCardEntries', '/a15']
+						['RateCardEntries', '/a15'],
+						['Subscriptions', '/a10'],
+						['Zuora Products', '/a1c'],
+						['Zuora ProductRatePlans', '/a1U'],
+						['Zuora ProductRatePlanCharges', '/a1T']
 					],
 					addLineAndHeading = function(heading) {
 						var hrelement = document.createElement('hr'),
@@ -155,7 +163,7 @@ unsafeWindow.addEventListener("load", function() {
 						select.setAttribute('style', "width:150px; margin-left:5px");
 						/* setting an onchange event */
 						//select.onchange = function() {dbrOptionChange()};
-						
+
 						for (i = 0; i < il; i += 1) {
 							var option;
 							option = document.createElement("option");
@@ -248,7 +256,7 @@ unsafeWindow.addEventListener("load", function() {
 				createSelectList();
 				// Create a separator and heading in the menu list
 				addLineAndHeading('Developer Tools');
-				
+
 				// Add links to the list
 				addItemsToList(urls.newMenuOptions, 'green');
 
