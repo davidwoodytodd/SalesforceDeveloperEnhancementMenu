@@ -81,9 +81,9 @@ unsafeWindow.addEventListener("load", function() {
 					objectListOptions = [
 						['-- Choose a List --', ''],
 						['Assets', '/02i'],
-						['Credit Memos', '/a42']
+						['Credit Memos', '/a42'],
 						['Cross References', '/a0t/o'],
-						['Invoices', '/a1O']
+						['Invoices', '/a1O'],
 						['Lookup Configs', '/a2q/o'],
 						['Packages', '/01t'],
 						['Products', '/01t/o'],
