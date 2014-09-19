@@ -6,7 +6,7 @@
 // @include     https://c.*.force.com/*
 // @exclude     https://dreamevent.my.salesforce.com/*
 // @grant       GM_log
-// @version     2.0
+// @version     2.3
 // ==/UserScript==
 // David Todd
 //
@@ -81,7 +81,9 @@ unsafeWindow.addEventListener("load", function() {
 					objectListOptions = [
 						['-- Choose a List --', ''],
 						['Assets', '/02i'],
+						['Credit Memos', '/a42']
 						['Cross References', '/a0t/o'],
+						['Invoices', '/a1O']
 						['Lookup Configs', '/a2q/o'],
 						['Packages', '/01t'],
 						['Products', '/01t/o'],
